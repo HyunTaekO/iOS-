@@ -231,3 +231,11 @@ case .right:
 case nil:
     print("직진")
 }
+// 싱글톤 패턴의 적용 예시
+// 앱을 실행하는 동안, 하나의 유일한 객체만 생성되어서, 해당 부분을 관리
+
+let screen = UIScreen.main    // 화면
+let userDefaults = UserDefaults.standard    // 한번생성된 후, 계속 메모리에 남음!!!
+let application = UIApplication.shared   // 앱
+let fileManager = FileManager.default    // 파일
+let notification = NotificationCenter.default   // 노티피케이션(특정 상황, 시점을 알려줌)
